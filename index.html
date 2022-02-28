@@ -19,7 +19,7 @@
   <body>
     <div class="container w-100 m-auto">
       <div class="row w-100 m-auto">
-        <div class="col-md-6 m-auto text-center">
+        <div class="col-md-6 text-center">
           <h2>left side</h2>
           <div class="input-group mb-3">
             <input
@@ -30,6 +30,7 @@
               aria-label="Search"
               aria-describedby="basic-addon2"
             />
+
             <div class="input-group-append">
               <span
                 onclick="allPlayers()"
@@ -39,10 +40,26 @@
               >
             </div>
           </div>
+          <p id="error"></p>
+          <img id="spinner" src="./images/spinning-loading.gif" alt="" />
           <div id="player-container"></div>
         </div>
-        <div class="col-md-6 m-auto text-center">
+        <div class="col-md-6 mt-4 text-center">
           <h2>right side</h2>
+          <div class="image-container">
+            <img
+              id="female"
+              class="w-50"
+              src="./images/female-footballer.jpg"
+              alt=""
+            />
+            <img
+              id="male"
+              class="w-50"
+              src="./images/male-footballer.jpg"
+              alt=""
+            />
+          </div>
           <div id="details-container" class="details-container"></div>
         </div>
       </div>
